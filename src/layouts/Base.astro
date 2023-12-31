@@ -73,6 +73,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 	</body>
 </html>
 <style is:global>
+	@font-face {
+		font-display: swap;
+		font-family: "Syne";
+		font-style: normal;
+		font-weight: 500;
+		src: url("/fonts/syne-v22-latin-500.woff2") format("woff2");
+	}
 	* {
 		box-sizing: border-box;
 		margin: 0;
@@ -86,7 +93,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 		padding: 0;
 		min-height: 100vh;
 		min-height: 100svh;
-		font-family: system-ui, sans-serif;
+		font-family: "Syne", system-ui, sans-serif;
 		color: #081e1f;
 	}
 	@media (prefers-color-scheme: dark) {
