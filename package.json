@@ -9,6 +9,10 @@
 		"preview": "astro preview",
 		"astro": "astro"
 	},
+	"browserslist": [
+		"> 0.5%, > 0.1% in US, Firefox ESR, not dead",
+		"maintained node versions"
+	],
 	"dependencies": {
 		"@astrojs/check": "^0.3.4",
 		"astro": "^4.0.8",
