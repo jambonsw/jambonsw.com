@@ -23,7 +23,9 @@ The project has the following folders structure:
 
 ```text
 /
+├── fonts/
 ├── public/
+│   ├── fonts/
 │   └── favicon.svg
 ├── src/
 │   ├── layouts/
@@ -32,6 +34,12 @@ The project has the following folders structure:
 │       └── index.astro
 └── package.json
 ```
+
+The `fonts/` folder contains the original font
+used to create the font subsets in `public/fonts/`.
+This is manual process that is required
+if text in `src/` is changed.
+Please see the README in `fonts/` for more information.
 
 Astro looks for `.astro` files in the `src/pages/` directory.
 Each page is exposed as a route based on its file name.
